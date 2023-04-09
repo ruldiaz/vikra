@@ -10,7 +10,7 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
-router.get('/', async (req, res)=>{
+router.get('/users', async (req, res)=>{
     try {
         const getUserDb = await User.findAll({
             include: {
@@ -25,7 +25,6 @@ router.get('/', async (req, res)=>{
     } catch (error) {
      res.status(400).json({error: error.message})   
     }
-    
 })
 
 router.post('/user', async (req, res)=>{
