@@ -6,6 +6,14 @@ const routes = require('./routes/index.js');
 
 require('./db.js');
 
+<<<<<<< HEAD
+
+app.get('/', (req, res)=>{
+    res.status(200).send('endpoint')
+})
+
+module.exports = app;
+=======
 const server = express();
 
 server.name = 'backend';
@@ -33,3 +41,4 @@ server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
 });
 
 module.exports = server;
+>>>>>>> 8f1d33a6e9c483cd9a4205dec890fafcdc156929
