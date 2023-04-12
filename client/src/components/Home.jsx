@@ -17,7 +17,13 @@ console.log(allUsers)
         <div>
             {allUsers?.map(e=> {
                 console.log(e)
-                return <Card key={e.id} id={e.id} firstName={e.firstName} lastName={e.lastName} email={e.email}  />
+                return <Card 
+                key={e.id} 
+                id={e.id} 
+                firstName={e.firstName} 
+                lastName={e.lastName} 
+                email={e.email} 
+                image={e.image} />
             })}
         </div>
     );

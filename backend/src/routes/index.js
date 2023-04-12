@@ -33,6 +33,7 @@ router.post('/user', async (req, res)=>{
             firstName,
             lastName,
             email,
+            image,
             posts,
             createdInDb
         } = req.body;
@@ -41,6 +42,7 @@ router.post('/user', async (req, res)=>{
             firstName,
             lastName,
             email,
+            image,
             createdInDb
         });
 
