@@ -12,16 +12,20 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: false,
           },
-          lastName: {
+        lastName: {
             type: DataTypes.STRING,
             allowNull: false,
           },
-          email: {
+        email: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
           },
-          createdInDb: {
+        image: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
+        createdInDb: {
             type: DataTypes.BOOLEAN,
             defaultValue: true,
             allowNull: false,
